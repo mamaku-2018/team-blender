@@ -50,16 +50,17 @@ body {
   height: 30px;
   text-align: center
 }
-.teamHolder {
-  margin: 5% 10% 5% 10%;
-}
-.teamHeader {
+
 
 /* ////////^^^        HOME        ^^^//////// */
 /* ////////////////////////////////////////// */
 /* ////////          RESULTS         //////// */
 
 /* results page */
+
+.teamHolder {
+  margin: 5% 10% 5% 10%;
+}
 
  .headerResults {
 
