@@ -24973,16 +24973,16 @@ var Results = function (_React$Component) {
         _react2.default.createElement(_Team2.default, null),
         _react2.default.createElement(
           'div',
-          { className: 'bottomBar' },
-          _react2.default.createElement(
-            'button',
-            null,
-            'Accept Team'
-          ),
+          { className: 'submit' },
           _react2.default.createElement(
             'button',
             null,
             'Reroll'
+          ),
+          _react2.default.createElement(
+            'button',
+            null,
+            'Accept Team'
           )
         )
       );
@@ -25042,15 +25042,15 @@ var Team = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        null,
+        { className: 'teamHolder' },
         _react2.default.createElement(
           'h3',
-          null,
+          { className: 'teamHeader' },
           'Team 1'
         ),
         _react2.default.createElement(
           'div',
-          { className: 'teamHolder' },
+          null,
           _react2.default.createElement(_Person2.default, null)
         )
       );

@@ -45,14 +45,19 @@ body {
 .submit {
   margin: 2% 30% 0 60%;
   height: 30px;
-  /* float: right; */
+  text-align: center
 }
+.teamHolder {
+  margin: 5% 10% 5% 10%;
+}
+.teamHeader {
 
+}
 /* results page */
  .headerResults {
 
  }
 
  .bottomBar {
-   
+
  }

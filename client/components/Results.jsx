@@ -16,9 +16,9 @@ class Results extends React.Component {
           <h1>Results</h1>
         </div>
         <Team />
-        <div className ='bottomBar'>
-          <button>Accept Team</button>
+        <div className ='submit'>
           <button>Reroll</button>
+          <button>Accept Team</button>
         </div>
       </div>
     )
