@@ -2,8 +2,10 @@ import React from 'react'
 
 function Person (props) {
   return (
-    <h4> {props.name} </h4>
-
+    <div className="personCard">
+      <h4 className='personHeader'> {props.name} </h4>
+      hello this is text
+    </div>
   )
 }
 

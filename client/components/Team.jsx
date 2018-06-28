@@ -9,11 +9,17 @@ class Team extends React.Component {
     }
   }
 
+
+  
   render () {
     return (
       <div className='teamHolder'>
         <h3 className='teamHeader'>Team 1</h3>
-        <div >
+        <div className="peopleContainer">
+          <Person />
+          <Person />
+          <Person />
+          <Person />
           <Person />
         </div>
       </div>

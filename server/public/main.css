@@ -62,10 +62,19 @@ body {
   margin: 5% 10% 5% 10%;
 }
 
- .headerResults {
+.peopleContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 
- }
+.personCard {
+  height: 200px;
+  width: 150px;
+  margin: 1% 1% 1% 1%
+}
 
- .bottomBar {
-
- }
+.personHeader {
+  height : 30px;
+  margin-top: 0px
+}

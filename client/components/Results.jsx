@@ -1,5 +1,5 @@
 import React from 'react'
-import {HashRouter as Router, Route, Link} from 'react-router-dom'
+// import {HashRouter as Router, Route, Link} from 'react-router-dom'
 import Team from './Team'
 
 class Results extends React.Component {
@@ -13,9 +13,10 @@ class Results extends React.Component {
     return (
       <div>
         <div className='header'>
-          <h1>Results</h1>
+          <h2>Results</h2>
         </div>
         <Team />
+
         <div className ='submit'>
           <button>Reroll</button>
           <button>Accept Team</button>
