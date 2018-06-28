@@ -1,4 +1,6 @@
 import React from 'react'
+import {HashRouter as Router, Route} from 'react-router-dom'
+import Pool from './NamesPool'
 
 class App extends React.Component {
   constructor (props) {
@@ -10,10 +12,11 @@ class App extends React.Component {
 
   render () {
     return (
-      <div className='app'>
-        <h1>Fullstack Boilerplate</h1>
-
-      </div>
+      <Router>
+        <div className='app'>
+          <Route path='/home' component={Pool} />
+        </div>
+      </Router>
     )
   }
 }
