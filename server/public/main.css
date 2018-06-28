@@ -1,3 +1,47 @@
 * {
   border: 1px solid red;
 }
+body {
+  margin: 0;
+}
+.addPeople {
+  height: 100%;
+  /* background-color: red; */
+}
+
+.header {
+  text-align: center;
+  font-size: 2vw;
+  font-size: 3vw;
+  margin-top: 3%;
+}
+
+.radioButtons {
+  margin: 15% 38% 3% 38%;
+  height: 30px;
+}
+
+.radioAdd {
+  float: left;
+}
+.radioRemove {
+  float: left;
+  margin-left: 25%;
+}
+.dropDown {
+  margin: 2% 28%;
+  height: 30px;
+}
+.input {
+  margin: 2% 28%;
+  height: 30px;
+}
+.namePool {
+  margin: 2% 28%;
+  height: 120px;
+}
+.submit {
+  margin: 2% 30% 0 60%;
+  height: 30px;
+  /* float: right; */
+}

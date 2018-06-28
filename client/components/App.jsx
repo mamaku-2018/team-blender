@@ -19,12 +19,15 @@ class App extends React.Component {
     return (
       <Router>
         <div className='app'>
-          <Route path='/' component={Header} />
-          <Route path='/' component={RadioButtons} />
-          <Route path='/' component={Input} />
-          <Route path='/' component={Pool} />
-          <Route path='/' component={Submit} />
+          <div className='addPeople'>
+            <Route path='/' component={Header} />
+            <Route path='/' component={RadioButtons} />
+            <Route path='/' component={Input} />
+            <Route path='/' component={Pool} />
+            <Route path='/' component={Submit} />
+          </div>
         </div>
+
       </Router>
     )
   }

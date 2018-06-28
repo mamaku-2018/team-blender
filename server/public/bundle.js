@@ -21120,6 +21120,10 @@ var _Input = __webpack_require__(79);
 
 var _Input2 = _interopRequireDefault(_Input);
 
+var _DropDown = __webpack_require__(82);
+
+var _DropDown2 = _interopRequireDefault(_DropDown);
+
 var _NamesPool = __webpack_require__(80);
 
 var _NamesPool2 = _interopRequireDefault(_NamesPool);
@@ -21135,8 +21139,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-// import DropDown from './Dropdown'
-
 
 // import Person from './Person'
 
@@ -21163,11 +21165,16 @@ var App = function (_React$Component) {
         _react2.default.createElement(
           'div',
           { className: 'app' },
-          _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _Header2.default }),
-          _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _RadioButtons2.default }),
-          _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _Input2.default }),
-          _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _NamesPool2.default }),
-          _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _Submit2.default })
+          _react2.default.createElement(
+            'div',
+            { className: 'addPeople' },
+            _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _Header2.default }),
+            _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _RadioButtons2.default }),
+            _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _Input2.default }),
+            _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _DropDown2.default }),
+            _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _NamesPool2.default }),
+            _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _Submit2.default })
+          )
         )
       );
     }
@@ -24665,13 +24672,13 @@ var RadioButtons = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { className: 'radiobuttons' },
+        { className: 'radioButtons' },
         _react2.default.createElement(
           'form',
           null,
           _react2.default.createElement(
             'div',
-            { className: 'radio' },
+            { className: 'radioAdd' },
             _react2.default.createElement(
               'label',
               null,
@@ -24681,7 +24688,7 @@ var RadioButtons = function (_React$Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'radio' },
+            { className: 'radioRemove' },
             _react2.default.createElement(
               'label',
               null,
@@ -24747,15 +24754,19 @@ var Input = function (_React$Component) {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        'form',
-        { onSubmit: this.handleSubmit },
+        'div',
+        { className: 'input' },
         _react2.default.createElement(
-          'label',
-          null,
-          'Angel Name:',
-          _react2.default.createElement('input', { type: 'text', value: this.state.value, onChange: this.handleChange })
-        ),
-        _react2.default.createElement('input', { type: 'submit', value: 'Submit' })
+          'form',
+          { onSubmit: this.handleSubmit },
+          _react2.default.createElement(
+            'label',
+            null,
+            'Angel Name:',
+            _react2.default.createElement('input', { type: 'text', value: this.state.value, onChange: this.handleChange })
+          ),
+          _react2.default.createElement('input', { type: 'submit', value: 'Submit' })
+        )
       );
     }
   }]);
@@ -24811,6 +24822,8 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactRouterDom = __webpack_require__(46);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Submit = function Submit() {
@@ -24818,14 +24831,143 @@ var Submit = function Submit() {
     'div',
     { className: 'submit' },
     _react2.default.createElement(
-      'button',
-      null,
-      'Go to Results'
+      _reactRouterDom.HashRouter,
+      { to: '/results' },
+      _react2.default.createElement(
+        'button',
+        null,
+        'Go to Results'
+      )
     )
   );
 };
 
 exports.default = Submit;
+
+/***/ }),
+/* 82 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var DropDown = function (_React$Component) {
+  _inherits(DropDown, _React$Component);
+
+  function DropDown(props) {
+    _classCallCheck(this, DropDown);
+
+    var _this = _possibleConstructorReturn(this, (DropDown.__proto__ || Object.getPrototypeOf(DropDown)).call(this, props));
+
+    _this.state = {
+      value: 'shaka'
+    };
+
+    _this.handleChange = _this.handleChange.bind(_this);
+    return _this;
+  }
+
+  _createClass(DropDown, [{
+    key: 'handleChange',
+    value: function handleChange(event) {
+      this.setState({ value: event.target.value });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'dropDown' },
+        _react2.default.createElement(
+          'form',
+          { onSubmit: this.handleSubmit },
+          _react2.default.createElement(
+            'label',
+            null,
+            'Pick your emoji:',
+            _react2.default.createElement(
+              'select',
+              { value: this.state.value, onChange: this.handleChange },
+              _react2.default.createElement(
+                'option',
+                { value: 'shaka' },
+                'Shaka'
+              ),
+              _react2.default.createElement(
+                'option',
+                { value: 'hearteyes' },
+                'Heart Eyes'
+              ),
+              _react2.default.createElement(
+                'option',
+                { value: 'poo' },
+                'Poop'
+              ),
+              _react2.default.createElement(
+                'option',
+                { value: 'smile' },
+                'Smile'
+              ),
+              _react2.default.createElement(
+                'option',
+                { value: 'crylaugh' },
+                'Cry Laugh'
+              ),
+              _react2.default.createElement(
+                'option',
+                { value: 'sunglasses' },
+                'Sunglasses'
+              ),
+              _react2.default.createElement(
+                'option',
+                { value: 'kiss' },
+                'Kiss'
+              ),
+              _react2.default.createElement(
+                'option',
+                { value: 'peach' },
+                'Peach'
+              ),
+              _react2.default.createElement(
+                'option',
+                { value: 'heart' },
+                'Red Heart'
+              ),
+              _react2.default.createElement(
+                'option',
+                { value: 'angel' },
+                'Angel'
+              )
+            )
+          ),
+          _react2.default.createElement('input', { type: 'submit', value: 'Submit' })
+        )
+      );
+    }
+  }]);
+
+  return DropDown;
+}(_react2.default.Component);
+
+exports.default = DropDown;
 
 /***/ })
 /******/ ]);
