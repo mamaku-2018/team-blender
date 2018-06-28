@@ -1,4 +1,5 @@
 import React from 'react'
+import Radiobuttons from './Radiobuttons'
 
 class App extends React.Component {
   constructor (props) {
@@ -12,7 +13,7 @@ class App extends React.Component {
     return (
       <div className='app'>
         <h1>Fullstack Boilerplate</h1>
-
+        <Radiobuttons />
       </div>
     )
   }
