@@ -1,9 +1,11 @@
 import React from 'react'
 
-export const Pool = () => {
+const Pool = () => {
   return (
     <div className="namePool">
-      <div id="names" placeHolder="Caitlyn"></div>
+      <div id="names" placeHolder="Caitlyn">Well hello</div>
     </div>
   )
 }
+
+export default Pool

@@ -1,6 +1,6 @@
 import React from 'react'
 
-class Radiobuttons extends React.Component {
+class RadioButtons extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -31,4 +31,4 @@ class Radiobuttons extends React.Component {
   }
 }
 
-export default Radiobuttons
+export default RadioButtons
