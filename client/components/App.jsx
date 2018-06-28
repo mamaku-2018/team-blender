@@ -16,7 +16,7 @@ class App extends React.Component {
       <Router>
         <div className='app'>
           <Route path='/home' component={Pool} />
-          
+
         </div>
       </Router>
     )
