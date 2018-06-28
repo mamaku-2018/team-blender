@@ -5,6 +5,7 @@ import RadioButtons from './RadioButtons'
 import Input from './Input'
 import Pool from './NamesPool'
 import Submit from './Submit'
+import Results from './Results'
 // import Person from './Person'
 
 class App extends React.Component {
@@ -25,6 +26,9 @@ class App extends React.Component {
             <Route path='/home' component={Input} />
             <Route path='/home' component={Pool} />
             <Route path='/home' component={Submit} />
+          </div>
+          <div className='resultsPage'>
+            <Route path='/results' component={Results}/>
           </div>
         </div>
 
