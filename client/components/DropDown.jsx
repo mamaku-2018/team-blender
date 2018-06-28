@@ -3,19 +3,15 @@ import React from 'react'
 class DropDown extends React.Component {
   constructor (props) {
     super(props)
-    this.state = {value: 'shaka'}
+    this.state = {
+      value: 'shaka'
+    }
 
     this.handleChange = this.handleChange.bind(this)
-    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleChange (event) {
     this.setState({value: event.target.value})
-  }
-
-  handleSubmit (event) {
-    alert('Your emoji is: ' + this.state.value)
-    event.preventDefault()
   }
 
   render () {
