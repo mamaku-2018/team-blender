@@ -1,6 +1,6 @@
 import React from 'react'
 import {HashRouter as Router, Route, Link} from 'react-router-dom'
-import Person from '/Person'
+import Person from './Person'
 
 class Team extends React.Component {
   constructor (props) {

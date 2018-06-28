@@ -1,6 +1,6 @@
 import React from 'react'
 import {HashRouter as Router, Route, Link} from 'react-router-dom'
-import Team from '/Team'
+import Team from './Team'
 
 class Results extends React.Component {
   constructor (props) {
@@ -12,10 +12,13 @@ class Results extends React.Component {
   render () {
     return (
       <div>
-        <h1>Results</h1>
+        <div className='header'>
+          <h1>Results</h1>
+        </div>
         <Team />
-        <div className ='home'>
-          <button>Home</button>
+        <div className ='bottomBar'>
+          <button>Accept Team</button>
+          <button>Reroll</button>
         </div>
       </div>
     )
