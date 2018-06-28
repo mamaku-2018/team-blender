@@ -24691,7 +24691,7 @@ var RadioButtons = function (_React$Component) {
             _react2.default.createElement(
               'label',
               null,
-              _react2.default.createElement('input', { type: 'radio', value: 'option1', checked: true }),
+              _react2.default.createElement('input', { type: 'radio', name: 'radAnswer', value: 'option1', checked: true }),
               'Add'
             )
           ),
@@ -24701,7 +24701,7 @@ var RadioButtons = function (_React$Component) {
             _react2.default.createElement(
               'label',
               null,
-              _react2.default.createElement('input', { type: 'radio', value: 'option2' }),
+              _react2.default.createElement('input', { type: 'radio', name: 'radAnswer', value: 'option2' }),
               'Remove'
             )
           )

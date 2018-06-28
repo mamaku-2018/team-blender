@@ -14,13 +14,13 @@ class RadioButtons extends React.Component {
         <form>
           <div className="radioAdd">
             <label>
-              <input type="radio" value="option1" checked={true} />
+              <input type="radio" name="radAnswer" value="option1" checked={true} />
         Add
             </label>
           </div>
           <div className="radioRemove">
             <label>
-              <input type="radio" value="option2" />
+              <input type="radio" name="radAnswer" value="option2" />
        Remove
             </label>
           </div>
