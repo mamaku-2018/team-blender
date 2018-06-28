@@ -24735,7 +24735,6 @@ var Input = function (_React$Component) {
     _this.state = { value: '' };
 
     _this.handleChange = _this.handleChange.bind(_this);
-    _this.handleSubmit = _this.handleSubmit.bind(_this);
     return _this;
   }
 
@@ -24743,12 +24742,6 @@ var Input = function (_React$Component) {
     key: 'handleChange',
     value: function handleChange(event) {
       this.setState({ value: event.target.value });
-    }
-  }, {
-    key: 'handleSubmit',
-    value: function handleSubmit(event) {
-      alert('A name was submitted: ' + this.state.value);
-      event.preventDefault();
     }
   }, {
     key: 'render',
