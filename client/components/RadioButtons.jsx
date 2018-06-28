@@ -10,15 +10,15 @@ class RadioButtons extends React.Component {
 
   render () {
     return (
-      <div className='radiobuttons'>
+      <div className='radioButtons'>
         <form>
-          <div className="radio">
+          <div className="radioAdd">
             <label>
               <input type="radio" value="option1" checked={true} />
         Add
             </label>
           </div>
-          <div className="radio">
+          <div className="radioRemove">
             <label>
               <input type="radio" value="option2" />
        Remove
