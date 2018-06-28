@@ -1,13 +1,12 @@
 import React from 'react'
-import { HashRouter as Route, Link } from 'react-router-dom'
-
-import Results from './Results'
+import {Link} from 'react-router-dom'
 
 const Submit = () => {
   return (
     <div className='submit'>
-      <Route path='/results' component={Results}/>
-      <button>Go to Results</button>
+      <Link to='/results'>
+        <button>Go to Results</button>
+      </Link>
     </div>
   )
 }
