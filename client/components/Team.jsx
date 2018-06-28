@@ -1,8 +1,8 @@
 import React from 'react'
 import {HashRouter as Router, Route, Link} from 'react-router-dom'
-import Team from '/Team'
+import Person from '/Person'
 
-class Results extends React.Component {
+class Team extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -12,14 +12,13 @@ class Results extends React.Component {
   render () {
     return (
       <div>
-        <h1>Results</h1>
-        <Team />
-        <div className ='home'>
-          <button>Home</button>
+        <h3>Team 1</h3>
+        <div className='teamHolder'>
+          <Person />
         </div>
       </div>
     )
   }
 }
 
-export default Results
+export default Team
