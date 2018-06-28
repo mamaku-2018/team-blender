@@ -6,6 +6,9 @@
 body {
   margin: 0;
 }
+
+
+/* ////////        HOME        //////// */
 .addPeople {
   height: 100%;
   /* background-color: red; */
@@ -52,8 +55,12 @@ body {
 }
 .teamHeader {
 
-}
+/* ////////^^^        HOME        ^^^//////// */
+/* ////////////////////////////////////////// */
+/* ////////          RESULTS         //////// */
+
 /* results page */
+
  .headerResults {
 
  }
