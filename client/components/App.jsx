@@ -1,12 +1,12 @@
 import React from 'react'
 import {HashRouter as Router, Route} from 'react-router-dom'
 import Header from './Header'
-import RadioButtons from './Radiobuttons'
-import Input from './Input'
+// import RadioButtons from './Radiobuttons'
+// import Input from './Input'
 // import DropDown from './Dropdown'
-import Pool from './NamesPool'
-import Results from './Submit'
-import Person from './Person'
+// import Pool from './NamesPool'
+// import Results from './Submit'
+// import Person from './Person'
 
 class App extends React.Component {
   constructor (props) {
@@ -21,11 +21,11 @@ class App extends React.Component {
       <Router>
         <div className='app'>
           <Route path='/home' component={Header} />
-          <Route path='/home' component={RadioButtons} />
+          {/* <Route path='/home' component={RadioButtons} />
           <Route path='/home' component={Input} />
           {/* <Route path='/home' component={DropDown} /> */}
-          <Route path='/home' component={Pool} />
-          <Route path='/home' component={Results} />
+          {/* <Route path='/home' component={Pool} />
+          <Route path='/home' component={Results} /> */}
         </div>
       </Router>
     )
