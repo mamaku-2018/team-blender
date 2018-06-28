@@ -6,6 +6,9 @@
 body {
   margin: 0;
 }
+
+
+/* ////////        HOME        //////// */
 .addPeople {
   height: 100%;
   /* background-color: red; */
@@ -47,6 +50,10 @@ body {
   height: 30px;
   /* float: right; */
 }
+
+/* ////////^^^        HOME        ^^^//////// */
+/* ////////////////////////////////////////// */
+/* ////////          RESULTS         //////// */
 
 /* results page */
  .headerResults {
