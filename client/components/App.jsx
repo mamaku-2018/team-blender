@@ -6,6 +6,7 @@ import Input from './Input'
 // import DropDown from './Dropdown'
 import Pool from './NamesPool'
 import Results from './Submit'
+import Person from './Person'
 
 class App extends React.Component {
   constructor (props) {
