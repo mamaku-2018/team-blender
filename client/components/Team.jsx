@@ -11,7 +11,7 @@ class Team extends React.Component {
 
   render () {
     return (
-      <div>
+      <div className="team">
         <h3>Team 1</h3>
         <div className='teamHolder'>
           <Person />
