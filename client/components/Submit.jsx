@@ -1,9 +1,11 @@
 import React from 'react'
 
-export const Submit = () => {
+const Submit = () => {
   return (
     <div className='submit'>
-      <button>Results</button>
+      <button>Go to Results</button>
     </div>
   )
 }
+
+export default Submit
