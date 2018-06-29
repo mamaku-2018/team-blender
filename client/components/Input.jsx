@@ -5,15 +5,20 @@ class Input extends React.Component {
     super(props)
     this.state = {
       name: '',
-      emoji: 'shaka'
+      emoji: ''
     }
 
     this.handleChange = this.handleChange.bind(this)
+    this.deleteChange = this.deleteChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleChange (event) {
+    console.log(event)
     this.setState({
+      name: '',
       value: event.target.value
+
     })
   }
 
