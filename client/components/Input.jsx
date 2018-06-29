@@ -9,7 +9,7 @@ class Input extends React.Component {
     super(props)
     this.state = {
       name: '',
-      names: ['Shane', 'Rachael']
+      names: ['Shane', 'Rachael', 'Michael', 'Caitlyn', 'Sam']
     }
 
     this.insertStudent = this.insertStudent.bind(this)
