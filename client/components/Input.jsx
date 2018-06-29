@@ -29,12 +29,12 @@ class Input extends React.Component {
           <div classsName="radioButtons">
             <div className="radioAdd">
               <label>
-                <input type="radio" value="option1" checked={true} />Add
+                <input type="radio" name="radAnswer" value="option1" checked={true} />Add
               </label>
             </div>
             <div className="radioRemove">
               <label>
-                <input type="radio" value="option2" />Remove
+                <input type="radio" name="radAnswer" value="option2" />Remove
               </label>
             </div>
           </div>
