@@ -24682,30 +24682,7 @@ var RadioButtons = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { className: 'radioButtons' },
-        _react2.default.createElement(
-          'form',
-          null,
-          _react2.default.createElement(
-            'div',
-            { className: 'radioAdd' },
-            _react2.default.createElement(
-              'label',
-              null,
-              _react2.default.createElement('input', { type: 'radio', value: 'option1', checked: true }),
-              'Add'
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'radioRemove' },
-            _react2.default.createElement(
-              'label',
-              null,
-              _react2.default.createElement('input', { type: 'radio', value: 'option2' }),
-              'Remove'
-            )
-          )
-        )
+        _react2.default.createElement('form', null)
       );
     }
   }]);
@@ -24774,6 +24751,30 @@ var Input = function (_React$Component) {
           'form',
           { onSubmit: this.handleSubmit },
           _react2.default.createElement(
+            'div',
+            { className: 'radioButtons' },
+            _react2.default.createElement(
+              'div',
+              { className: 'radioAdd' },
+              _react2.default.createElement(
+                'label',
+                null,
+                _react2.default.createElement('input', { type: 'radio', value: 'option1', checked: true }),
+                'Add'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'radioRemove' },
+              _react2.default.createElement(
+                'label',
+                null,
+                _react2.default.createElement('input', { type: 'radio', value: 'option2' }),
+                'Remove'
+              )
+            )
+          ),
+          _react2.default.createElement(
             'label',
             null,
             'Angel Name:',
@@ -24838,7 +24839,7 @@ var Input = function (_React$Component) {
               )
             )
           ),
-          _react2.default.createElement('input', { type: 'submit', value: 'Submit' })
+          _react2.default.createElement('input', { className: 'submitBtn', type: 'submit', value: 'Submit' })
         )
       );
     }

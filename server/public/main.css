@@ -2,12 +2,51 @@
 
 @import url('https://fonts.googleapis.com/css?family=Monoton');
 
-
 * {
   border: 1px solid red;
 }
 body {
   margin: 0;
+}
+
+body:before{
+  content:'';
+  height:100%;
+  display:inline-block;
+  vertical-align:middle;
+}
+
+.submitBtn {
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.submitBtn:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+.submitBtn:before,button:after{
+  content:'';
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+.submitBtn:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.submitBtn:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
 }
 
 /* ////////        HOME        //////// */
@@ -33,7 +72,7 @@ body {
   font-family: 'Monoton', cursive;
 }
 
-.radioButtons {
+.radio.submitBtns {
   margin: 15% 38% 3% 38%;
   height: 30px;
 }
