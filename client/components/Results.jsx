@@ -1,5 +1,4 @@
 import React from 'react'
-// import {HashRouter as Router, Route, Link} from 'react-router-dom'
 import Team from './Team'
 import {fetchPeople} from '../apiClient'
 
@@ -14,14 +13,17 @@ class Results extends React.Component {
     this.setPeople = this.setPeople.bind(this)
   }
 
-  setPeople (fetchPeople) {
+  setPeople () {
     return fetchPeople()
       .then(people => {
-        this.setState({people: people})
+        this.setState({people: people.students})
       })
       .catch(err => {
         this.setState({errorMessage: err.message})
       })
+  }
+  componentDidMount () {
+    this.setPeople()
   }
 
   randomisePeople (start) {
@@ -40,16 +42,17 @@ class Results extends React.Component {
   }
 
   render () {
-    const middle = this.state.people.length()
+    const middle = this.state.people.length / 2
     const team1 = this.state.people.slice(0, middle)
     const team2 = this.state.people.slice(middle)
+
     return (
       <div>
         <div className='header'>
           <h2>Results</h2>
         </div>
-        <Team people1={team1}/>
-        <Team people2={team2}/>
+        <Team people={team1}/>
+        <Team people={team2}/>
         <div className ='submit'>
           <button>Reroll</button>
           <button>Accept Team</button>

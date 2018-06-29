@@ -10,11 +10,10 @@ class Input extends React.Component {
 
     this.handleChange = this.handleChange.bind(this)
     // this.deleteChange = this.deleteChange.bind(this)
-    this.handleSubmit = this.handleSubmit.bind(this)
+    // this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleChange (event) {
-    console.log(event)
     this.setState({
       name: '',
       value: event.target.value
@@ -40,10 +39,10 @@ class Input extends React.Component {
           </div>
           <div className='clear'></div>
           <label>
-          Angel Name:<input className='nameIn' type="text" name={this.state.name} onChange={this.handleChange} />
+          Angel Name:<input className='nameIn' type="text" />
           </label>
           <label>
-          Pick your emoji:<select className='dropDown' emoji={this.state.emoji} onChange={this.handleChange}>
+          Pick your emoji:<select className='dropDown'>
               <option emoji="shaka">Shaka</option>
               <option emoji="hearteyes">Heart Eyes</option>
               <option emoji="poo">Poop</option>
