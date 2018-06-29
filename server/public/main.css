@@ -9,14 +9,14 @@ body {
   margin: 0;
 }
 
-body:before{
+submit:before{
   content:'';
   height:100%;
   display:inline-block;
   vertical-align:middle;
 }
 
-.submitBtn {
+.submit button {
   background:#1AAB8A;
   color:#fff;
   border:none;
@@ -27,24 +27,24 @@ body:before{
   transition:800ms ease all;
   outline:none;
 }
-.submitBtn:hover{
+.submit button:hover{
   background:#fff;
   color:#1AAB8A;
 }
-.submitBtn:before,button:after{
+.submit button:before,button:after{
   content:'';
   height:2px;
   width:0;
   background: #1AAB8A;
   transition:400ms ease all;
 }
-.submitBtn:after{
+.submit button:after{
   right:inherit;
   top:inherit;
   left:0;
   bottom:0;
 }
-.submitBtn:hover:before,button:hover:after{
+.submit button:hover:before,button:hover:after{
   width:100%;
   transition:800ms ease all;
 }
