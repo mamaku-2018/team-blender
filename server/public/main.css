@@ -65,18 +65,33 @@ body {
 .submit {
   margin: 2% 30% 0 60%;
   height: 30px;
-  /* float: right; */
+  text-align: center
 }
+
 
 /* ////////^^^        HOME        ^^^//////// */
 /* ////////////////////////////////////////// */
 /* ////////          RESULTS         //////// */
 
 /* results page */
- .headerResults {
 
- }
+.teamHolder {
+  margin: 5% 10% 5% 10%;
+}
 
- .bottomBar {
-   
- }
+.peopleContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.personCard {
+  height: 200px;
+  width: 150px;
+  margin: 1% 1% 1% 1%
+}
+
+.personHeader {
+  height : 30px;
+  margin-top: 0px
+}
