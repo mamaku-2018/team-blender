@@ -1,5 +1,8 @@
 /* main page */
 
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+
+
 * {
   border: 1px solid red;
 }
@@ -22,7 +25,17 @@ body {
   text-align: center;
   font-size: 2vw;
   font-size: 3vw;
-  margin-top: 3%;
+  margin-top: 2%;
+}
+.header h1 {
+  color    : blue;
+  font-size: 4vw;
+  font-family: 'Monoton', cursive;
+}
+.header h2 {
+  color    : green;
+  font-size: 3vw;
+  font-family: 'Monoton', cursive;
 }
 
 .radioButtons {

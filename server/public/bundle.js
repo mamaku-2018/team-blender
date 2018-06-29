@@ -24622,7 +24622,12 @@ var Header = function Header() {
     _react2.default.createElement(
       'h1',
       null,
-      ' This is a header '
+      ' Team Blender '
+    ),
+    _react2.default.createElement(
+      'h2',
+      null,
+      ' Add/Remove Ingredients '
     )
   );
 };
