@@ -20,8 +20,8 @@ function addStudent (name, testDb) {
     .insert({name: name})
 }
 
-function deleteStudent (id) {
-  const db = knex
+function deleteStudent (id, testDb) {
+  const db = testDb || knex
   return db('students')
     .where('id', id)
     .del()

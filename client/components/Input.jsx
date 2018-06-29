@@ -5,15 +5,20 @@ class Input extends React.Component {
     super(props)
     this.state = {
       name: '',
-      emoji: 'shaka'
+      emoji: ''
     }
 
     this.handleChange = this.handleChange.bind(this)
+    // this.deleteChange = this.deleteChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleChange (event) {
+    console.log(event)
     this.setState({
+      name: '',
       value: event.target.value
+
     })
   }
 
@@ -24,21 +29,21 @@ class Input extends React.Component {
           <div classsName="radioButtons">
             <div className="radioAdd">
               <label>
-                <input type="radio" value="option1" checked={true} />Add
+                <input type="radio" name="radAnswer" value="option1" checked={true} />Add
               </label>
             </div>
             <div className="radioRemove">
               <label>
-                <input type="radio" value="option2" />Remove
+                <input type="radio" name="radAnswer" value="option2" />Remove
               </label>
             </div>
           </div>
           <div className='clear'></div>
           <label>
-          Angel Name:<input type="text" name={this.state.name} onChange={this.handleChange} />
+          Angel Name:<input className='nameIn' type="text" name={this.state.name} onChange={this.handleChange} />
           </label>
           <label>
-          Pick your emoji:<select emoji={this.state.emoji} onChange={this.handleChange}>
+          Pick your emoji:<select className='dropDown' emoji={this.state.emoji} onChange={this.handleChange}>
               <option emoji="shaka">Shaka</option>
               <option emoji="hearteyes">Heart Eyes</option>
               <option emoji="poo">Poop</option>
@@ -51,7 +56,7 @@ class Input extends React.Component {
               <option emoji="angel">Angel</option>
             </select>
           </label>
-          <input type="submit" value="Submit" />
+          <div><input className="subBtn" type="submit" value="Submit" /></div>
         </form>
       </div>
     )

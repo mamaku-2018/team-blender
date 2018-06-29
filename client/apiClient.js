@@ -3,8 +3,19 @@ import request from 'superagent'
 export function fetchPeople () {
   return request.get('/v1/students')
     .then(res => {
-      console.log(res)
       const students = res.body
       return students
     })
 }
+
+// export function addStudent (student) {
+//   return request.post('v1/students')
+//     .send(student)
+//     .then(data => {
+//       const newStudent = data.body
+//       return newStudent
+//     })
+//     .catch(err => {
+//       throw new Error('Red alert! Try again!', err.message)
+//     })
+// }

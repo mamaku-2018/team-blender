@@ -2,14 +2,53 @@
 
 @import url('https://fonts.googleapis.com/css?family=Monoton');
 
-
-* {
+/* * {
   border: 1px solid red;
-}
+} */
 body {
   margin: 0;
+  background : url("/background.jpg");
 }
 
+submit:before{
+  content:'';
+  height:100%;
+  display:inline-block;
+  vertical-align:middle;
+}
+
+.submit button {
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.submit button:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+.submit button:before,button:after{
+  content:'';
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+.submit button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.submit button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
 .clear {
   clear: both;
 }
@@ -18,7 +57,6 @@ body {
 /* ////////        HOME        //////// */
 .addPeople {
   height: 100%;
-  /* background-color: red; */
 }
 
 .header {
@@ -38,21 +76,42 @@ body {
   font-family: 'Monoton', cursive;
 }
 
-.radioButtons {
+.radio.submitBtns {
   margin: 15% 38% 3% 38%;
   height: 30px;
 }
 
 .radioAdd {
   float: left;
+  margin-left: 27%;
 }
 .radioRemove {
   float: left;
   margin-left: 25%;
 }
 .dropDown {
-  margin: 2% 28%;
+  margin: 0% 3%;
   height: 30px;
+}
+
+.subBtn {
+  font-size: 1vw;
+  margin: 2% 40%;
+  padding: 20px 0;
+  border-radius: 50%;
+  transition : transform 3s;
+  width: 20%;
+  height: 40%;
+  background-color: green;
+  color : white;
+}
+.subBtn:hover{
+  transform : rotate(-10800deg) !important;
+}
+
+.nameIn {
+  width: 35%;
+  margin-right: 5%;
 }
 .input {
   margin: 2% 28%;
