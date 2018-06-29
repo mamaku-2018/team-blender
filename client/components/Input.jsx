@@ -40,10 +40,10 @@ class Input extends React.Component {
           </div>
           <div className='clear'></div>
           <label>
-          Angel Name:<input type="text" name={this.state.name} onChange={this.handleChange} />
+          Angel Name:<input className='nameIn' type="text" name={this.state.name} onChange={this.handleChange} />
           </label>
           <label>
-          Pick your emoji:<select emoji={this.state.emoji} onChange={this.handleChange}>
+          Pick your emoji:<select className='dropDown' emoji={this.state.emoji} onChange={this.handleChange}>
               <option emoji="shaka">Shaka</option>
               <option emoji="hearteyes">Heart Eyes</option>
               <option emoji="poo">Poop</option>
@@ -56,7 +56,7 @@ class Input extends React.Component {
               <option emoji="angel">Angel</option>
             </select>
           </label>
-          <input type="submit" value="Submit" />
+          <div><input className="subBtn" type="submit" value="Submit" /></div>
         </form>
       </div>
     )
