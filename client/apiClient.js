@@ -1,12 +1,5 @@
 import request from 'superagent'
 
-// export function fetchPeople () {
-//   return request.get('/results')
-//     .then(data => {
-//       const people = data.body
-//     })
-// }
-
 export function addStudent (student) {
   return request.post('/v1/students/insert')
     .send({name: student})
