@@ -1,11 +1,21 @@
 /* main page */
 
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+
+
 * {
   border: 1px solid red;
 }
 body {
   margin: 0;
 }
+
+.clear {
+  clear: both;
+}
+
+
+/* ////////        HOME        //////// */
 .addPeople {
   height: 100%;
   /* background-color: red; */
@@ -15,7 +25,17 @@ body {
   text-align: center;
   font-size: 2vw;
   font-size: 3vw;
-  margin-top: 3%;
+  margin-top: 2%;
+}
+.header h1 {
+  color    : blue;
+  font-size: 4vw;
+  font-family: 'Monoton', cursive;
+}
+.header h2 {
+  color    : green;
+  font-size: 3vw;
+  font-family: 'Monoton', cursive;
 }
 
 .radioButtons {
@@ -47,6 +67,10 @@ body {
   height: 30px;
   /* float: right; */
 }
+
+/* ////////^^^        HOME        ^^^//////// */
+/* ////////////////////////////////////////// */
+/* ////////          RESULTS         //////// */
 
 /* results page */
  .headerResults {
