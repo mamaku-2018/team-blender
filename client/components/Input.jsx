@@ -55,16 +55,16 @@ class Input extends React.Component {
         </label>
         <label>
           Pick your emoji:<select emoji={this.state.emoji} onChange={this.handleChange}>
-            <option emoji="shaka">Shaka</option>
-            <option emoji="hearteyes">Heart Eyes</option>
-            <option emoji="poo">Poop</option>
-            <option emoji="smile">Smile</option>
-            <option emoji="crylaugh">Cry Laugh</option>
-            <option emoji="sunglasses">Sunglasses</option>
-            <option emoji="kiss">Kiss</option>
-            <option emoji="peach">Peach</option>
-            <option emoji="heart">Red Heart</option>
-            <option emoji="angel">Angel</option>
+            <option value="shaka">Shaka</option>
+            <option value="hearteyes">Heart Eyes</option>
+            <option value="poo">Poop</option>
+            <option value="smile">Smile</option>
+            <option value="crylaugh">Cry Laugh</option>
+            <option value="sunglasses">Sunglasses</option>
+            <option value="kiss">Kiss</option>
+            <option value="peach">Peach</option>
+            <option value="heart">Red Heart</option>
+            <option value="angel">Angel</option>
           </select>
         </label>
         <input type="submit" value="Submit" onClick={this.insertStudent}/>
