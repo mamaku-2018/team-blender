@@ -24878,8 +24878,6 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(11);
-
 var _Team = __webpack_require__(82);
 
 var _Team2 = _interopRequireDefault(_Team);
@@ -24905,6 +24903,10 @@ var Results = function (_React$Component) {
     _this.state = {};
     return _this;
   }
+
+  // fetchPeople () {
+  //   ret
+  // }
 
   _createClass(Results, [{
     key: 'render',

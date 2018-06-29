@@ -1,18 +1,17 @@
 import React from 'react'
 // import {HashRouter as Router, Route, Link} from 'react-router-dom'
 import Team from './Team'
-import
+
 class Results extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
     }
   }
-  
-  fetchPeople() {
-ret
 
-  }
+  // fetchPeople () {
+  //   ret
+  // }
 
   render () {
     return (
