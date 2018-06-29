@@ -1,17 +1,29 @@
 import request from 'superagent'
 
-// export function fetchPeople () {
-//   return request.get('/results')
+export function fetchPeople () {
+  return request.get('/v1/students')
+    .then(res => {
+      const students = res.body
+      return students
+    })
+}
+
+// export function addStudent (student) {
+//   return request.post('v1/students')
+//     .send(student)
 //     .then(data => {
-//       const people = data.body
+//       const newStudent = data.body
+//       return newStudent
+//     })
+//     .catch(err => {
+//       throw new Error('Red alert! Try again!', err.message)
 //     })
 // }
-
 export function addStudent (student) {
-  return request.post('v1/students')
-    .send(student)
-    .then(data => {
-      const newStudent = data.body
+  return request.post('/v1/students/insert')
+    .send({name: student})
+    .then(res => {
+      const newStudent = res.body
       return newStudent
     })
     .catch(err => {

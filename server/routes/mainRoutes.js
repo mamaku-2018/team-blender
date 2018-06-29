@@ -17,8 +17,11 @@ router.get('/', (req, res) => {
 router.post('/insert', (req, res) => {
   const newStudent = req.body.name
   db.addStudent(newStudent)
-    .then(() => {
-      res.status(200).end()
+    .then((ids) => {
+      db.getStudent(ids[0])
+        .then((student) => {
+          res.json(student)
+        })
     })
     .catch(err => {
       res.status(500).send('Database error: ' + err.message)
