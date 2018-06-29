@@ -21175,23 +21175,19 @@ var _Header = __webpack_require__(77);
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _RadioButtons = __webpack_require__(78);
-
-var _RadioButtons2 = _interopRequireDefault(_RadioButtons);
-
-var _Input = __webpack_require__(79);
+var _Input = __webpack_require__(78);
 
 var _Input2 = _interopRequireDefault(_Input);
 
-var _NamesPool = __webpack_require__(80);
+var _NamesPool = __webpack_require__(79);
 
 var _NamesPool2 = _interopRequireDefault(_NamesPool);
 
-var _Submit = __webpack_require__(81);
+var _Submit = __webpack_require__(80);
 
 var _Submit2 = _interopRequireDefault(_Submit);
 
-var _Results = __webpack_require__(82);
+var _Results = __webpack_require__(81);
 
 var _Results2 = _interopRequireDefault(_Results);
 
@@ -21232,7 +21228,6 @@ var App = function (_React$Component) {
             'div',
             { className: 'addPeople' },
             _react2.default.createElement(_reactRouterDom.Route, { path: '/home', component: _Header2.default }),
-            _react2.default.createElement(_reactRouterDom.Route, { path: '/home', component: _RadioButtons2.default }),
             _react2.default.createElement(_reactRouterDom.Route, { path: '/home', component: _Input2.default }),
             _react2.default.createElement(_reactRouterDom.Route, { path: '/home', component: _NamesPool2.default }),
             _react2.default.createElement(_reactRouterDom.Route, { path: '/home', component: _Submit2.default })
@@ -24627,7 +24622,12 @@ var Header = function Header() {
     _react2.default.createElement(
       'h1',
       null,
-      ' This is a header '
+      ' Team Blender '
+    ),
+    _react2.default.createElement(
+      'h2',
+      null,
+      ' Add/Remove Ingredients '
     )
   );
 };
@@ -24636,82 +24636,6 @@ exports.default = Header;
 
 /***/ }),
 /* 78 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(0);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var RadioButtons = function (_React$Component) {
-  _inherits(RadioButtons, _React$Component);
-
-  function RadioButtons(props) {
-    _classCallCheck(this, RadioButtons);
-
-    var _this = _possibleConstructorReturn(this, (RadioButtons.__proto__ || Object.getPrototypeOf(RadioButtons)).call(this, props));
-
-    _this.state = {};
-    return _this;
-  }
-
-  _createClass(RadioButtons, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: 'radioButtons' },
-        _react2.default.createElement(
-          'form',
-          null,
-          _react2.default.createElement(
-            'div',
-            { className: 'radioAdd' },
-            _react2.default.createElement(
-              'label',
-              null,
-              _react2.default.createElement('input', { type: 'radio', value: 'option1', checked: true }),
-              'Add'
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'radioRemove' },
-            _react2.default.createElement(
-              'label',
-              null,
-              _react2.default.createElement('input', { type: 'radio', value: 'option2' }),
-              'Remove'
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return RadioButtons;
-}(_react2.default.Component);
-
-exports.default = RadioButtons;
-
-/***/ }),
-/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24768,6 +24692,31 @@ var Input = function (_React$Component) {
         _react2.default.createElement(
           'form',
           { onSubmit: this.handleSubmit },
+          _react2.default.createElement(
+            'div',
+            { classsName: 'radioButtons' },
+            _react2.default.createElement(
+              'div',
+              { className: 'radioAdd' },
+              _react2.default.createElement(
+                'label',
+                null,
+                _react2.default.createElement('input', { type: 'radio', value: 'option1', checked: true }),
+                'Add'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'radioRemove' },
+              _react2.default.createElement(
+                'label',
+                null,
+                _react2.default.createElement('input', { type: 'radio', value: 'option2' }),
+                'Remove'
+              )
+            )
+          ),
+          _react2.default.createElement('div', { className: 'clear' }),
           _react2.default.createElement(
             'label',
             null,
@@ -24845,7 +24794,7 @@ var Input = function (_React$Component) {
 exports.default = Input;
 
 /***/ }),
-/* 80 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24876,7 +24825,7 @@ var Pool = function Pool() {
 exports.default = Pool;
 
 /***/ }),
-/* 81 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24913,7 +24862,7 @@ var Submit = function Submit() {
 exports.default = Submit;
 
 /***/ }),
-/* 82 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24929,7 +24878,9 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Team = __webpack_require__(83);
+var _reactRouterDom = __webpack_require__(11);
+
+var _Team = __webpack_require__(82);
 
 var _Team2 = _interopRequireDefault(_Team);
 
@@ -24995,7 +24946,7 @@ var Results = function (_React$Component) {
 exports.default = Results;
 
 /***/ }),
-/* 83 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -25013,7 +24964,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(15);
 
-var _Person = __webpack_require__(84);
+var _Person = __webpack_require__(83);
 
 var _Person2 = _interopRequireDefault(_Person);
 
@@ -25067,7 +25018,7 @@ var Team = function (_React$Component) {
 exports.default = Team;
 
 /***/ }),
-/* 84 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
