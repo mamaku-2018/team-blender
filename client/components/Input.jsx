@@ -12,15 +12,8 @@ class Input extends React.Component {
       names: ['Shane', 'Rachael', 'Michael', 'Caitlyn', 'Sam']
     }
 
-    this.handleChange = this.handleChange.bind(this)
-    // this.deleteChange = this.deleteChange.bind(this)
-    // this.handleSubmit = this.handleSubmit.bind(this)
-  }
-
-  handleChange (event) {
-    this.insertStudent = this.insertStudent.bind(this)
-    // this.deleteChange = this.deleteChange.bind(this)
     this.updateNewStudent = this.updateNewStudent.bind(this)
+    this.insertStudent = this.insertStudent.bind(this)
   }
 
   insertStudent () {
