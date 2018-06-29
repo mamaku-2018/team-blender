@@ -1,8 +1,28 @@
+const path = require('path')
+const config = require(path.join(__dirname, '../knexfile')).development
+const knex = require('knex')(config)
+
 module.exports = {
-  getPeeps
+  getStudents,
+  addStudent,
+  deleteStudent
 }
 
-function getPeeps () {
-  const Peeps = ['Michael', 'Shane', 'Caitlyn, Rachael, Sam']
-  return Promise.resolve(Peeps)
+function getStudents (testDb) {
+  const db = testDb || knex
+  return db('students')
+    .select()
+}
+
+function addStudent (name, testDb) {
+  const db = testDb || knex
+  return db('students')
+    .insert({name: name})
+}
+
+function deleteStudent (id) {
+  const db = knex
+  return db('students')
+    .where('id', id)
+    .del()
 }
