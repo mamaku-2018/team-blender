@@ -4,8 +4,17 @@ const knex = require('knex')(config)
 
 module.exports = {
   getStudents,
+  getStudent,
   addStudent,
   deleteStudent
+}
+
+function getStudent (id, testDb) {
+  const db = testDb || knex
+  return db('students')
+    .where('id', id)
+    .select()
+    .first()
 }
 
 function getStudents (testDb) {
