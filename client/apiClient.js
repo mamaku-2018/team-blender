@@ -6,6 +6,9 @@ export function fetchPeople () {
       const students = res.body
       return students
     })
+    .catch(err => {
+      throw new Error('Red alert! Try again!', err.message)
+    })
 }
 
 // export function addStudent (student) {

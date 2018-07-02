@@ -21,7 +21,7 @@ class Input extends React.Component {
       .then((newStudent) => {
         this.setState({
           name: '',
-          names: [...this.state.names, this.state.name]
+          names: [...this.state.names, newStudent]
         })
       })
   }
@@ -50,7 +50,7 @@ class Input extends React.Component {
         </div>
         <div className='clear'></div>
         <label>
-          Angel Name:<input type="text" name="name" value={this.state.name} onChange={this.updateNewStudent} />
+          Angel Name:<input className="input" id="names" type="text" name="name" value={this.state.name} onChange={this.updateNewStudent} />
         </label>
         <label>
           Pick your emoji:<select emoji={this.state.emoji} onChange={this.handleChange}>
@@ -66,7 +66,7 @@ class Input extends React.Component {
             <option value="angel">Angel</option>
           </select>
         </label>
-        <input type="submit" value="Submit" onClick={this.insertStudent}/>
+        <input className='subBtn' type="submit" value="Submit" onClick={this.insertStudent}/>
 
         <ul>
           {this.state.names.map(name => {

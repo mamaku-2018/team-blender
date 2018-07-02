@@ -103,10 +103,10 @@ submit:before{
   width: 20%;
   height: 40%;
   background-color: green;
-  color : white;
+  color : rgb(255, 255, 255);
 }
 .subBtn:hover{
-  transform : rotate(-10800deg) !important;
+  transform : rotate(-1080deg) !important;
 }
 
 .nameIn {
