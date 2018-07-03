@@ -11,17 +11,6 @@ export function fetchPeople () {
     })
 }
 
-// export function addStudent (student) {
-//   return request.post('v1/students')
-//     .send(student)
-//     .then(data => {
-//       const newStudent = data.body
-//       return newStudent
-//     })
-//     .catch(err => {
-//       throw new Error('Red alert! Try again!', err.message)
-//     })
-// }
 export function addStudent (student) {
   return request.post('/v1/students/insert')
     .send({name: student})

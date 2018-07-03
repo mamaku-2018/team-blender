@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Namespool from './Namespool'
+// import Namespool from './Namespool'
 
 import {addStudent} from '../apiClient'
 
@@ -17,14 +17,25 @@ class Input extends React.Component {
   }
 
   insertStudent () {
+    console.log('ssssssssssssssssssssssssssssssssssssssssssss')
     addStudent(this.state.name)
       .then((newStudent) => {
+        console.log(newStudent.name)
         this.setState({
           name: '',
-          names: [...this.state.names, newStudent]
+          names: [...this.state.names, newStudent.name]
         })
       })
   }
+  // insertStudent () {
+  //   addStudent(this.state.name)
+  //     .then(console.log(newStudent))
+  //   this.setState({
+  //     name: '',
+  //     names: [...this.state.names, this.state.name]
+  //   })
+  //   this.render()
+  // }
 
   updateNewStudent (event) {
     this.setState({
@@ -69,13 +80,12 @@ class Input extends React.Component {
         <input className='subBtn' type="submit" value="Submit" onClick={this.insertStudent}/>
 
         <ul>
-          {this.state.names.map(name => {
-            return (
-              <Namespool
-                key={name}
-                name={name}/>
-            )
-          })}
+          {this.state.names.map(name => (
+            <li key={name}>
+              name={name}
+            </li>
+          )
+          )}
         </ul>
 
       </div>
